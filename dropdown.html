@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>Page Title</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<style>
+			.dropdown button {
+				background-color: burlywood;
+				padding: 5px;
+				cursor: pointer;
+				border: none;
+			}
+			.dropdown a {
+				display: block;
+				text-decoration: none;
+				color: crimson;
+				padding: 5px;
+			}
+			.dropdown .content {
+				background-color: blanchedalmond;
+				box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+				position: absolute;
+				min-width: 100px;
+				display: none;
+			}
+			.dropdown:hover .content {
+				display: block;
+			}
+			.dropdown:hover button {
+				background-color: darkgray;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="dropdown">
+			<button>Dropdown</button>
+			<div class="content">
+				<a href="">A</a>
+				<a href="">B</a>
+				<a href="">C</a>
+			</div>
+		</div>
+		<p>
+			Lorem ipsum dolor sit amet consectetur, adipisicing elit. Deleniti, optio
+			rerum tempore beatae debitis architecto similique exercitationem rem,
+			quidem doloribus non. Animi iure alias autem repudiandae modi eveniet
+			facilis suscipit.
+		</p>
+	</body>
+</html>
