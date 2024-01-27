@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>My Website</title>
+		<style>
+			a:link {
+				color: green;
+			}
+			a:hover {
+				color: red;
+				font-size: 1.1em;
+			}
+			a:visited {
+				color: black;
+			}
+			p::first-letter {
+				font-size: 2em;
+			}
+			p::first-line {
+				background-color: thistle;
+			}
+			p::selection {
+				background-color: black;
+				color: yellow;
+			}
+			#apple::after {
+				content: "🍎";
+			}
+			#banana::before {
+				content: "🍌";
+			}
+		</style>
+	</head>
+	<body>
+		<a href="http://google.com">Google</a>
+		<p>
+			Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus accusamus
+			velit minus ad voluptatem tempore earum veniam quae distinctio expedita
+			perspiciatis hic tempora quidem sapiente et, obcaecati placeat incidunt
+			illum.
+		</p>
+		<ul>
+			<li id="apple">apple</li>
+			<li id="banana">banana</li>
+		</ul>
+	</body>
+</html>
