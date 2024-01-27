@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Javascript</title>
+		<style>
+			#id {
+				color: rgb(0, 0, 0);
+			}
+		</style>
+	</head>
+	<body>
+		<button onclick="myFunction()">Click This</button>
+		<button onclick="myFunction2()">Click This 2</button>
+		<button onclick="myFunction3()">Click This 3</button>
+		<button onclick="myFunction4()">Click This 4</button>
+		<p id="greet">Hello!</p>
+
+		<script>
+			function myFunction() {
+				document.getElementById("greet").innerHTML = "Hello World!";
+			}
+
+			function myFunction2() {
+				document.getElementById("greet").style.color = "red";
+			}
+
+			function myFunction3() {
+				document.getElementById("greet").style.fontSize = "25px";
+			}
+
+			function myFunction4() {
+				const check = document.getElementById("greet").style.display;
+
+				if (check === "none") {
+					document.getElementById("greet").style.display = "block";
+				} else {
+					document.getElementById("greet").style.display = "none";
+				}
+			}
+		</script>
+	</body>
+</html>
